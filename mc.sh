@@ -11,4 +11,12 @@ mkdir ~/.minecraft ~/.minecraft/mods
 wget -O mods.tar.gz https://github.com/jogang0304/simplyOptimizedMods/raw/main/1.19.4/mods.tar.gz
 tar -zxf mods.tar.gz --directory ~/.minecraft/mods
 
+startScript="#!/bin/bash
+./jdk/bin/java -jar ./launcher.jar"
+echo "$startScript" > ./start.sh
+chmod +x ./start.sh
+
+rm -rf jdk20.tar.gz
+rm -rf mods.tar.gz
+
 ./jdk/bin/java -jar ./launcher.jar
