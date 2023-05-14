@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir minecraft
 cd minecraft
 curDir=$(pwd)
@@ -18,5 +19,3 @@ chmod +x ./start.sh
 
 rm -rf jdk20.tar.gz
 rm -rf mods.tar.gz
-
-./jdk/bin/java -jar ./launcher.jar
